@@ -1,0 +1,8 @@
+.history {
+    list-style: none;
+    cursor: pointer;
+}
+
+.history li {
+    float: left;
+}
