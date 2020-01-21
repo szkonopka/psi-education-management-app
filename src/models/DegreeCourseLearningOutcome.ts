@@ -1,4 +1,5 @@
 import { LearningOutcome } from "./LearningOutcome";
+import { LearningOutcomeType } from "./EnumerationTypes";
 
 export class DegreeCourseLearningOutcome extends LearningOutcome {
 
