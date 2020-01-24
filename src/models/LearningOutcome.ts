@@ -1,6 +1,6 @@
 import { LearningOutcomeType } from './EnumerationTypes';
 
-export abstract class LearningOutcome {
+export default abstract class LearningOutcome {
     
     constructor (
         symbol: string,
@@ -15,4 +15,13 @@ export abstract class LearningOutcome {
     symbol: string;
     type: LearningOutcomeType;
     description: string;
+};
+
+export function LearningOutcomeTypeToString(type: LearningOutcomeType): string {
+    switch (type) {
+        case LearningOutcomeType.SocialCompetences: return "Kompetencje społeczne";
+        case LearningOutcomeType.Skills: return "Umiejetności";
+        case LearningOutcomeType.Knowledge: return "Wiedza";
+    }
+    return "";
 };

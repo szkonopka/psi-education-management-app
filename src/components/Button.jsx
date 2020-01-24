@@ -2,7 +2,7 @@ import React from 'react';
 import './Button.css';
 
 function Button(props) {
-    return <button className={props.buttonClass}>{props.name}</button>;
+    return <div className={props.buttonClass}>{props.name}</div>;
 }
 
 export default Button;

@@ -1,7 +1,7 @@
-import { LearningOutcome } from "./LearningOutcome";
+import LearningOutcome from "./LearningOutcome";
 import { LearningOutcomeType } from "./EnumerationTypes";
 
-export class DegreeCourseLearningOutcome extends LearningOutcome {
+export default class DegreeCourseLearningOutcome extends LearningOutcome {
 
     constructor (
         symbol: string,

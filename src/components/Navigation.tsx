@@ -6,11 +6,16 @@ type NavigationProps = {
 };
 
 export const Navigation = ({ historyList } : NavigationProps) => {
-    const historyElemList = historyList.map((historyElem) => <li>{historyElem}</li>)
+    const historyElemList = historyList.map((historyElem) => {
+        if (historyList.indexOf(historyElem) == historyList.length - 1)
+            return <li>{historyElem}</li>
+        else
+            return <li>{historyElem} > </li>
+    });
 
     return (
         <div className="row">
-            <ul className="history">{historyElemList}</ul>
+            <ul className="history row">{historyElemList}</ul>
         </div>
     );    
 };
