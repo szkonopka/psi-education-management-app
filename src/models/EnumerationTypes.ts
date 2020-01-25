@@ -1,4 +1,5 @@
 export enum LearningOutcomeType {
+    Undefined,
     Knowledge,
     Skills,
     SocialCompetences

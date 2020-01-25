@@ -1,6 +1,5 @@
 import Subject from '../models/Subject';
 import { SubjectLearningArea, LearningOutcomeType } from '../models/EnumerationTypes';
-import { SubjectCard } from '../models/SubjectCard';
 import SubjectLearningOutcome from '../models/SubjectLearningOutcome';
 import MinisterialLearningOutcome from '../models/MinisterialLearningOutcome';
 import DegreeCourseLearningOutcome from '../models/DegreeCourseLearningOutcome';

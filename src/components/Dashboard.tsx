@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Menu from './Menu';
-import { Navigation } from './Navigation';
 import { 
     GetMockedSubjects, 
     GetMockedDegreeCourseLearningOutcomes, 
@@ -12,8 +11,7 @@ import { SubjectList } from './SubjectList';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
 import SidePanel from './SidePanel';
 import LearningOutcomeList from './LearningOutcomeList';
@@ -28,11 +26,25 @@ class Dashboard extends Component {
                         <Route path="/subjects">
                             <SubjectList subjectList={GetMockedSubjects()}/>
                         </Route>
-                        <Route path="/outcomes">
+                        <Route path="/ministerial-outcomes">
                             <LearningOutcomeList 
-                                degreeCourseLearningOutcomes={GetMockedDegreeCourseLearningOutcomes()}
-                                ministerialLearningOutcomes={GetMockedMinisterialLearningOutcomes()}
-                                subjectLearningOutcomes={GetMockedSubjectLearningOutcomes()}
+                                outcomes={GetMockedMinisterialLearningOutcomes()}
+                                outcomesName="Ministerialne efekty kształcenia"
+                                outcomesPath="/ministerial-outcomes"
+                            />
+                        </Route>
+                        <Route path="/degree-course-outcomes">
+                            <LearningOutcomeList 
+                                outcomes={GetMockedDegreeCourseLearningOutcomes()}
+                                outcomesName="Kierunkowe efekty kształcenia"
+                                outcomesPath="/degree-course-outcomes"
+                            />
+                        </Route>
+                        <Route path="/subject-outcomes">
+                            <LearningOutcomeList 
+                                outcomes={GetMockedSubjectLearningOutcomes()}
+                                outcomesName="Przedmiotowe efekty kształcenia"
+                                outcomesPath="/subject-outcomes"
                             />
                         </Route>
                     </Switch>
