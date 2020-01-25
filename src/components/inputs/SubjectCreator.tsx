@@ -1,11 +1,11 @@
 import React, { Component, FormEvent } from 'react';
 import './SubjectCreator.css';
-import { FunctionalButton } from './Button';
+import { FunctionalButton } from '../ui/Button';
 import { NavLink, Redirect } from "react-router-dom";
-import { LearningOutcomeType } from '../models/EnumerationTypes';
-import { LearningOutcomeTypeToStrMap, StringToLearningOutcomeType } from '../models/LearningOutcome';
-import SelectionInputContainer from './inputs/SelectionInputContainer';
-import InputContainer from './inputs/InputContainer';
+import { LearningOutcomeType } from '../../models/EnumerationTypes';
+import { LearningOutcomeTypeToStrMap, StringToLearningOutcomeType } from '../../models/LearningOutcome';
+import SelectionInputContainer from '../ui/SelectionInputContainer';
+import InputContainer from '../ui/InputContainer';
 
 type SubjectCreatorProps = {};
 

@@ -15,7 +15,7 @@ class Menu extends Component {
                 </ul>
                 <h3 className="menu__header">Uczelnia</h3>
                 <ul className="menu__options-wrapper column">
-                    <li><NavLink to="/programs"><Button name="Plany ksztacenia" buttonClass="list-btn"/></NavLink></li>
+                    <li><NavLink to="/syllabuses"><Button name="Plany ksztacenia" buttonClass="list-btn"/></NavLink></li>
                     <li><NavLink to="/faculties"><Button name="Kierunki" buttonClass="list-btn"/></NavLink></li>
                     <li><NavLink to="/subjects"><Button name="Przedmioty" buttonClass="list-btn"/></NavLink></li>
                     <li><NavLink to="/lecturers"><Button name="Prowadzący" buttonClass="list-btn"/></NavLink></li>

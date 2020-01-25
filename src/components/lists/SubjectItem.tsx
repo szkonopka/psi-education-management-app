@@ -1,6 +1,6 @@
 import React from 'react';
 import './SubjectItem.css';
-import Subject from '../models/Subject';
+import Subject from '../../models/Subject';
 
 type SubjectItemProps = {
     subject: Subject;

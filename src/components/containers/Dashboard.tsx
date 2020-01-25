@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import Menu from './Menu';
+import Menu from '../ui/Menu';
 import { 
     GetMockedSubjects, 
     GetMockedDegreeCourseLearningOutcomes, 
     GetMockedMinisterialLearningOutcomes, 
     GetMockedSubjectLearningOutcomes 
-  } from '../mocks/MockedObjects';
+  } from '../../mocks/MockedObjects';
 import './Dashboard.css';
-import { SubjectList } from './SubjectList';
+import { SubjectList } from '../lists/SubjectList';
 import {
     BrowserRouter as Router,
     Switch,
     Route
   } from "react-router-dom";
-import SidePanel from './SidePanel';
-import LearningOutcomeList from './LearningOutcomeList';
+import SidePanel from '../ui/SidePanel';
+import LearningOutcomeList from '../lists/LearningOutcomeList';
+import { SyllabusList } from '../lists/SyllabusList';
 
 class Dashboard extends Component {
     render() {
@@ -46,6 +47,9 @@ class Dashboard extends Component {
                                 outcomesName="Przedmiotowe efekty kształcenia"
                                 outcomesPath="/subject-outcomes"
                             />
+                        </Route>
+                        <Route path="/syllabuses">
+                            <SyllabusList/>
                         </Route>
                     </Switch>
                     <SidePanel/>

@@ -1,9 +1,9 @@
 import React from 'react';
-import LearningOutcome from '../models/LearningOutcome';
-import { LearningOutcomeTypeToString } from '../models/LearningOutcome';
+import LearningOutcome from '../../models/LearningOutcome';
+import { LearningOutcomeTypeToString } from '../../models/LearningOutcome';
 import './LearningOutcomeList.css';
 import './LearningOutcomeItem.css';
-import { FunctionalButton } from './Button';
+import { FunctionalButton } from '../ui/Button';
 import { NavLink, Route} from 'react-router-dom';
 
 type LearningOutcomesProps = {

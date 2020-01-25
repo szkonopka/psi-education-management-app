@@ -1,11 +1,11 @@
 import React from 'react';
 import './SubjectList.css';
 import './SubjectItem.css';
-import { FunctionalButton } from './Button';
+import { FunctionalButton } from '../ui/Button';
 import { Route, NavLink } from "react-router-dom";
-import SubjectCreator from './SubjectCreator';
+import SubjectCreator from '../inputs/SubjectCreator';
 import { SubjectItem } from './SubjectItem';
-import Subject from '../models/Subject';
+import Subject from '../../models/Subject';
 
 type SubjectsProps = {
     subjectList: Subject[]
