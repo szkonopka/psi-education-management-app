@@ -3,7 +3,6 @@ import { Course } from "./Course";
 import { SubjectCard } from "./SubjectCard";
 
 export default class Subject {
-    
     constructor (
         code: string, 
         polishName: string, 
@@ -11,8 +10,7 @@ export default class Subject {
         learningArea: SubjectLearningArea,
         ectsSum: number,
         cnpsSum: number,
-        zzuSum: number,
-        subjectCard: SubjectCard
+        zzuSum: number
     ) {
         this.code = code;
         this.polishName = polishName;
@@ -21,7 +19,6 @@ export default class Subject {
         this.ectsSum = ectsSum;
         this.cnpsSum = cnpsSum;
         this.zzuSum = zzuSum;
-        this.subjectCard = subjectCard;
     }
 
     code: string;
@@ -31,6 +28,6 @@ export default class Subject {
     ectsSum: number;
     cnpsSum: number;
     zzuSum: number;
-    subjectCard: SubjectCard;
+    subjectCard?: SubjectCard;
     courses?: Course[];
 };
